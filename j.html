@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            background-color: aliceblue;
+            align-items: center;
+            text-align: center;
+        }
+        .header{
+            font-size: 20px;
+            font-style: italic;
+            color: aqua;
+            margin-top: 15%;
+        }
+        .box-container{
+            margin-top: 10px;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 0.9px solid grey;
+            box-shadow: 5px;
+            border-radius: 10px;
+            color: white;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: orange;
+        }
+        .box3{
+            background-color: yellow;
+        }
+        .box4{
+            background-color: green;
+        }
+        .box5{
+            background-color: blue;
+        }
+        .box6{
+            background-color: indigo;
+        }
+        .box7{
+            background-color: violet;
+        }
+        .box8{
+            background-color: aliceblue;
+            color: burlywood
+        }
+    </style>
+<body>
+    <div class="container">
+        <h2 class="header">Choose Your Background Color: </h2>
+        <div class="box-container">
+            <button class="box box1">Red</button>
+            <button class="box box2">Orange</button>
+            <button class="box box3">Yellow</button>
+            <button class="box box4">Green</button>
+            <button class="box box5">Blue</button>
+            <button class="box box6">Indigo</button>
+            <button class="box box7">Violet</button>
+            <button class="box box8">Default</button>
+        </div>
+    </div>
+    <script>
+        var body=document.querySelector("body");
+        let  box1=document.querySelector(".box1");
+        box1.addEventListener("click",()=>{
+            body.style.backgroundColor="red";
+            box1.style.backgroundColor="white";
+            box1.style.color="red";
+        });
+        let box2=document.querySelector(".box2");
+        box2.addEventListener("click",()=>{
+            body.style.backgroundColor="orange";
+            box2.style.backgroundColor="white";
+            box2.style.color="orange";
+        });
+        let box3=document.querySelector(".box3");
+        box3.addEventListener("click",()=>{
+            body.style.backgroundColor="yellow";
+            box3.style.backgroundColor="white";
+            box3.style.color="yellow";
+        });
+        let box4=document.querySelector(".box4");
+        box4.addEventListener("click",()=>{
+            body.style.backgroundColor="green";
+            box4.style.backgroundColor="white";
+            box4.style.color="green";
+        });
+        let box5=document.querySelector(".box5");
+        box5.addEventListener("click",()=>{
+            body.style.backgroundColor="blue";
+            box5.style.backgroundColor="white";
+            box5.style.color="blue";
+        });
+        let box6=document.querySelector(".box6");
+        box6.addEventListener("click",()=>{
+            body.style.backgroundColor="indigo";
+            box6.style.backgroundColor="white";
+            box6.style.color="indigo";
+        });
+        let box7=document.querySelector(".box7");
+        box7.addEventListener("click",()=>{
+            body.style.backgroundColor="violet";
+            box7.style.backgroundColor="white";
+            box7.style.color="violet";
+        });
+        let box8=document.querySelector(".box8");
+        box8.addEventListener("click",()=>{
+            body.style.backgroundColor="aliceblue";
+            box8.style.backgroundColor="white";
+            box8.style.color="aliceblue";
+        });
+    </script>
+</body>
+</html>

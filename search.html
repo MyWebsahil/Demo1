@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input {
+        height: 30px;
+        width: 200px;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    button {
+        height: 37px;
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: green;
+        border: none;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="con">
+        <input type="text" placeholder="Search in page">
+        <button>Search</button>
+    </div>
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic possimus sequi architecto dolorum sit ab earum
+            magni ipsum, sunt accusamus! Voluptatibus maiores quasi in optio ut non animi dolores est.</p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptas, iure nemo enim nobis dolores
+            sapiente asperiores accusamus reprehenderit architecto ad culpa ipsum cumque laudantium corrupti iusto illo
+            alias laboriosam.
+        </p>
+    </div>
+    <script>
+        let btn=document.querySelector("button");
+        btn.addEventListener("click",()=>{
+            const input=document.querySelector("input");
+            const find=document.querySelector("p");
+            if(!find.test(input)){
+                // alert("not found");
+                console.log("hello");
+            }
+            if(find.test(input)){
+                // alert("Found");
+                console.log("Bye");
+            }
+        });
+    </script>
+</body>
+
+</html>
